@@ -28,6 +28,7 @@ async function fetchData() {
     const res = await fetch('./data.json');
     const data = await res.json();
     console.log(data);
+
     showUIData(data);
     showMenuData(data);
 }
@@ -63,10 +64,9 @@ function showMenuData(data) {
 //Middle Container UI
 function showUIData(data) {
     const middleContainer = document.querySelector('.middle_container');
+    const cardsContainer = document.querySelector('.cards_container');
 
     data.tasks.forEach((task) => {
-        const cardsContainer = document.createElement('div');
-        cardsContainer.classList.add('cards_container');
         //Displaying Info
         const infoContainer = document.createElement('div');
         infoContainer.classList.add('info_container');
