@@ -248,10 +248,11 @@ body {
 /* TPM CARD */
 .TPM_card_image {
     width: 100%;
+    height: 40vh;
 }
 
 /* TPM CARD */
-.TPM_card_image>img {
+.TPM_card_image>iframe {
     width: 100%;
     height: 100%;
 }
